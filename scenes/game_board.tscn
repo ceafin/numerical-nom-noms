@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://ci6otbiff0kg7"]
+
+[node name="GameBoard" type="Node2D" unique_id=1811885786]
+
+[node name="RoundManager" type="Node" parent="." unique_id=1514209209]
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1335879713]
+offset_right = 26.0
+offset_bottom = 16.0
+columns = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="CellNodes" type="RichTextLabel" parent="GridContainer" unique_id=1633599963]
+layout_mode = 2
+
+[node name="CellNodes2" type="RichTextLabel" parent="GridContainer" unique_id=1235438728]
+layout_mode = 2
+
+[node name="CellNodes3" type="RichTextLabel" parent="GridContainer" unique_id=1630509166]
+layout_mode = 2
+
+[node name="CellNodes4" type="RichTextLabel" parent="GridContainer" unique_id=1641643078]
+layout_mode = 2
+
+[node name="CellNodes5" type="RichTextLabel" parent="GridContainer" unique_id=395239245]
+layout_mode = 2
+
+[node name="CellNodes6" type="RichTextLabel" parent="GridContainer" unique_id=260129408]
+layout_mode = 2
+
+[node name="CellNodes7" type="RichTextLabel" parent="GridContainer" unique_id=552180267]
+layout_mode = 2
+
+[node name="CellNodes8" type="RichTextLabel" parent="GridContainer" unique_id=408384462]
+layout_mode = 2
+
+[node name="CellNodes9" type="RichTextLabel" parent="GridContainer" unique_id=899128813]
+layout_mode = 2
+
+[node name="CellNodes10" type="RichTextLabel" parent="GridContainer" unique_id=1809011293]
+layout_mode = 2
+
+[node name="CellNodes11" type="RichTextLabel" parent="GridContainer" unique_id=824007518]
+layout_mode = 2
+
+[node name="CellNodes12" type="RichTextLabel" parent="GridContainer" unique_id=1540343312]
+layout_mode = 2
+
+[node name="CellNodes13" type="RichTextLabel" parent="GridContainer" unique_id=768815244]
+layout_mode = 2
+
+[node name="CellNodes14" type="RichTextLabel" parent="GridContainer" unique_id=1442341138]
+layout_mode = 2
+
+[node name="CellNodes15" type="RichTextLabel" parent="GridContainer" unique_id=536507636]
+layout_mode = 2
+
+[node name="CellNodes16" type="RichTextLabel" parent="GridContainer" unique_id=956150483]
+layout_mode = 2
+
+[node name="CellNodes17" type="RichTextLabel" parent="GridContainer" unique_id=1123014009]
+layout_mode = 2
+
+[node name="CellNodes18" type="RichTextLabel" parent="GridContainer" unique_id=1096930746]
+layout_mode = 2
+
+[node name="CellNodes19" type="RichTextLabel" parent="GridContainer" unique_id=1868877216]
+layout_mode = 2
+
+[node name="CellNodes20" type="RichTextLabel" parent="GridContainer" unique_id=447017065]
+layout_mode = 2
+
+[node name="CellNodes21" type="RichTextLabel" parent="GridContainer" unique_id=538876035]
+layout_mode = 2
+
+[node name="CellNodes22" type="RichTextLabel" parent="GridContainer" unique_id=462755739]
+layout_mode = 2
+
+[node name="CellNodes23" type="RichTextLabel" parent="GridContainer" unique_id=790329226]
+layout_mode = 2
+
+[node name="CellNodes24" type="RichTextLabel" parent="GridContainer" unique_id=1641189363]
+layout_mode = 2
+
+[node name="CellNodes25" type="RichTextLabel" parent="GridContainer" unique_id=963694121]
+layout_mode = 2
+
+[node name="CellNodes26" type="RichTextLabel" parent="GridContainer" unique_id=2032814504]
+layout_mode = 2
+
+[node name="CellNodes27" type="RichTextLabel" parent="GridContainer" unique_id=1870924341]
+layout_mode = 2
+
+[node name="CellNodes28" type="RichTextLabel" parent="GridContainer" unique_id=2009232480]
+layout_mode = 2
+
+[node name="CellNodes29" type="RichTextLabel" parent="GridContainer" unique_id=1795980824]
+layout_mode = 2
+
+[node name="CellNodes30" type="RichTextLabel" parent="GridContainer" unique_id=1504772388]
+layout_mode = 2
+
+[node name="Player" type="Area2D" parent="." unique_id=314743534]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=799986184]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1562052089]
+
+[node name="Troggle" type="Area2D" parent="." unique_id=1207214850]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Troggle" unique_id=354536166]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Troggle" unique_id=1116696746]
+
+[node name="Timer" type="Timer" parent="Troggle" unique_id=131640182]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1928088226]
+
+[node name="HUD Container" type="Control" parent="HUD" unique_id=690953939]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TopHBox" type="HBoxContainer" parent="HUD/HUD Container" unique_id=929767158]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreLabel" type="Label" parent="HUD/HUD Container/TopHBox" unique_id=1094405124]
+layout_mode = 2
+
+[node name="RulePrompt" type="RichTextLabel" parent="HUD/HUD Container/TopHBox" unique_id=1480848856]
+layout_mode = 2
+
+[node name="LivesDisplay" type="Label" parent="HUD/HUD Container/TopHBox" unique_id=587535989]
+layout_mode = 2
