@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://ci6otbiff0kg7"]
 
+[ext_resource type="Script" uid="uid://ct5lfcfbvuant" path="res://scripts/game_board.gd" id="1_tqoos"]
+
 [node name="GameBoard" type="Node2D" unique_id=1811885786]
+script = ExtResource("1_tqoos")
 
 [node name="RoundManager" type="Node" parent="." unique_id=1514209209]
 
@@ -8,96 +11,217 @@
 offset_right = 26.0
 offset_bottom = 16.0
 columns = 6
-metadata/_edit_use_anchors_ = true
 
-[node name="CellNodes" type="RichTextLabel" parent="GridContainer" unique_id=1633599963]
+[node name="Cell_0x0" type="CenterContainer" parent="GridContainer" unique_id=1786730408]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_0x0" unique_id=422558020]
 layout_mode = 2
 
-[node name="CellNodes2" type="RichTextLabel" parent="GridContainer" unique_id=1235438728]
+[node name="Cell_1x0" type="CenterContainer" parent="GridContainer" unique_id=1235438728]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes3" type="RichTextLabel" parent="GridContainer" unique_id=1630509166]
+[node name="CellText" type="Label" parent="GridContainer/Cell_1x0" unique_id=2057440006]
 layout_mode = 2
 
-[node name="CellNodes4" type="RichTextLabel" parent="GridContainer" unique_id=1641643078]
+[node name="Cell_2x0" type="CenterContainer" parent="GridContainer" unique_id=1630509166]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes5" type="RichTextLabel" parent="GridContainer" unique_id=395239245]
+[node name="CellText" type="Label" parent="GridContainer/Cell_2x0" unique_id=963300611]
 layout_mode = 2
 
-[node name="CellNodes6" type="RichTextLabel" parent="GridContainer" unique_id=260129408]
+[node name="Cell_3x0" type="CenterContainer" parent="GridContainer" unique_id=1641643078]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes7" type="RichTextLabel" parent="GridContainer" unique_id=552180267]
+[node name="CellText" type="Label" parent="GridContainer/Cell_3x0" unique_id=1789898359]
 layout_mode = 2
 
-[node name="CellNodes8" type="RichTextLabel" parent="GridContainer" unique_id=408384462]
+[node name="Cell_4x0" type="CenterContainer" parent="GridContainer" unique_id=395239245]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes9" type="RichTextLabel" parent="GridContainer" unique_id=899128813]
+[node name="CellText" type="Label" parent="GridContainer/Cell_4x0" unique_id=2065712687]
 layout_mode = 2
 
-[node name="CellNodes10" type="RichTextLabel" parent="GridContainer" unique_id=1809011293]
+[node name="Cell_5x0" type="CenterContainer" parent="GridContainer" unique_id=260129408]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes11" type="RichTextLabel" parent="GridContainer" unique_id=824007518]
+[node name="CellText" type="Label" parent="GridContainer/Cell_5x0" unique_id=2049665885]
 layout_mode = 2
 
-[node name="CellNodes12" type="RichTextLabel" parent="GridContainer" unique_id=1540343312]
+[node name="Cell_0x1" type="CenterContainer" parent="GridContainer" unique_id=552180267]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes13" type="RichTextLabel" parent="GridContainer" unique_id=768815244]
+[node name="CellText" type="Label" parent="GridContainer/Cell_0x1" unique_id=45640865]
 layout_mode = 2
 
-[node name="CellNodes14" type="RichTextLabel" parent="GridContainer" unique_id=1442341138]
+[node name="Cell_1x1" type="CenterContainer" parent="GridContainer" unique_id=408384462]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes15" type="RichTextLabel" parent="GridContainer" unique_id=536507636]
+[node name="CellText" type="Label" parent="GridContainer/Cell_1x1" unique_id=73136168]
 layout_mode = 2
 
-[node name="CellNodes16" type="RichTextLabel" parent="GridContainer" unique_id=956150483]
+[node name="Cell_2x1" type="CenterContainer" parent="GridContainer" unique_id=899128813]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes17" type="RichTextLabel" parent="GridContainer" unique_id=1123014009]
+[node name="CellText" type="Label" parent="GridContainer/Cell_2x1" unique_id=1513402258]
 layout_mode = 2
 
-[node name="CellNodes18" type="RichTextLabel" parent="GridContainer" unique_id=1096930746]
+[node name="Cell_3x1" type="CenterContainer" parent="GridContainer" unique_id=1809011293]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes19" type="RichTextLabel" parent="GridContainer" unique_id=1868877216]
+[node name="CellText" type="Label" parent="GridContainer/Cell_3x1" unique_id=1231214154]
 layout_mode = 2
 
-[node name="CellNodes20" type="RichTextLabel" parent="GridContainer" unique_id=447017065]
+[node name="Cell_4x1" type="CenterContainer" parent="GridContainer" unique_id=824007518]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes21" type="RichTextLabel" parent="GridContainer" unique_id=538876035]
+[node name="CellText" type="Label" parent="GridContainer/Cell_4x1" unique_id=1855942173]
 layout_mode = 2
 
-[node name="CellNodes22" type="RichTextLabel" parent="GridContainer" unique_id=462755739]
+[node name="Cell_5x1" type="CenterContainer" parent="GridContainer" unique_id=1540343312]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes23" type="RichTextLabel" parent="GridContainer" unique_id=790329226]
+[node name="CellText" type="Label" parent="GridContainer/Cell_5x1" unique_id=1322381713]
 layout_mode = 2
 
-[node name="CellNodes24" type="RichTextLabel" parent="GridContainer" unique_id=1641189363]
+[node name="Cell_0x2" type="CenterContainer" parent="GridContainer" unique_id=768815244]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes25" type="RichTextLabel" parent="GridContainer" unique_id=963694121]
+[node name="CellText" type="Label" parent="GridContainer/Cell_0x2" unique_id=1133957012]
 layout_mode = 2
 
-[node name="CellNodes26" type="RichTextLabel" parent="GridContainer" unique_id=2032814504]
+[node name="Cell_1x2" type="CenterContainer" parent="GridContainer" unique_id=1442341138]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes27" type="RichTextLabel" parent="GridContainer" unique_id=1870924341]
+[node name="CellText" type="Label" parent="GridContainer/Cell_1x2" unique_id=901476598]
 layout_mode = 2
 
-[node name="CellNodes28" type="RichTextLabel" parent="GridContainer" unique_id=2009232480]
+[node name="Cell_2x2" type="CenterContainer" parent="GridContainer" unique_id=536507636]
+custom_minimum_size = Vector2(80, 60)
 layout_mode = 2
 
-[node name="CellNodes29" type="RichTextLabel" parent="GridContainer" unique_id=1795980824]
+[node name="CellText" type="Label" parent="GridContainer/Cell_2x2" unique_id=1942884547]
 layout_mode = 2
 
-[node name="CellNodes30" type="RichTextLabel" parent="GridContainer" unique_id=1504772388]
+[node name="Cell_3x2" type="CenterContainer" parent="GridContainer" unique_id=956150483]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_3x2" unique_id=393794211]
+layout_mode = 2
+
+[node name="Cell_4x2" type="CenterContainer" parent="GridContainer" unique_id=1123014009]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_4x2" unique_id=1016858837]
+layout_mode = 2
+
+[node name="Cell_5x2" type="CenterContainer" parent="GridContainer" unique_id=1096930746]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_5x2" unique_id=1049754299]
+layout_mode = 2
+
+[node name="Cell_0x3" type="CenterContainer" parent="GridContainer" unique_id=1868877216]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_0x3" unique_id=1821985276]
+layout_mode = 2
+
+[node name="Cell_1x3" type="CenterContainer" parent="GridContainer" unique_id=447017065]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_1x3" unique_id=421933881]
+layout_mode = 2
+
+[node name="Cell_2x3" type="CenterContainer" parent="GridContainer" unique_id=538876035]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_2x3" unique_id=1162565762]
+layout_mode = 2
+
+[node name="Cell_3x3" type="CenterContainer" parent="GridContainer" unique_id=462755739]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_3x3" unique_id=900317587]
+layout_mode = 2
+
+[node name="Cell_4x3" type="CenterContainer" parent="GridContainer" unique_id=790329226]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_4x3" unique_id=277859390]
+layout_mode = 2
+
+[node name="Cell_5x3" type="CenterContainer" parent="GridContainer" unique_id=1641189363]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_5x3" unique_id=1301163107]
+layout_mode = 2
+
+[node name="Cell_0x4" type="CenterContainer" parent="GridContainer" unique_id=963694121]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_0x4" unique_id=495805266]
+layout_mode = 2
+
+[node name="Cell_1x4" type="CenterContainer" parent="GridContainer" unique_id=2032814504]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_1x4" unique_id=1241238094]
+layout_mode = 2
+
+[node name="Cell_2x4" type="CenterContainer" parent="GridContainer" unique_id=1870924341]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_2x4" unique_id=1064258330]
+layout_mode = 2
+
+[node name="Cell_3x4" type="CenterContainer" parent="GridContainer" unique_id=2009232480]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_3x4" unique_id=550466799]
+layout_mode = 2
+
+[node name="Cell_4x4" type="CenterContainer" parent="GridContainer" unique_id=1795980824]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_4x4" unique_id=674127931]
+layout_mode = 2
+
+[node name="Cell_5x4" type="CenterContainer" parent="GridContainer" unique_id=1504772388]
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+
+[node name="CellText" type="Label" parent="GridContainer/Cell_5x4" unique_id=230307098]
 layout_mode = 2
 
 [node name="Player" type="Area2D" parent="." unique_id=314743534]
@@ -130,7 +254,7 @@ offset_bottom = 40.0
 [node name="ScoreLabel" type="Label" parent="HUD/HUD Container/TopHBox" unique_id=1094405124]
 layout_mode = 2
 
-[node name="RulePrompt" type="RichTextLabel" parent="HUD/HUD Container/TopHBox" unique_id=1480848856]
+[node name="RulePrompt" type="Label" parent="HUD/HUD Container/TopHBox" unique_id=1480848856]
 layout_mode = 2
 
 [node name="LivesDisplay" type="Label" parent="HUD/HUD Container/TopHBox" unique_id=587535989]
