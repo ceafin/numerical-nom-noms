@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://ci6otbiff0kg7"]
 
 [ext_resource type="Script" uid="uid://ct5lfcfbvuant" path="res://scripts/game_board.gd" id="1_tqoos"]
+[ext_resource type="Script" uid="uid://dxip7at583245" path="res://scripts/round_manager.gd" id="2_3wu0g"]
 
 [node name="GameBoard" type="Node2D" unique_id=1811885786]
 script = ExtResource("1_tqoos")
 
 [node name="RoundManager" type="Node" parent="." unique_id=1514209209]
+script = ExtResource("2_3wu0g")
 
 [node name="GridContainer" type="GridContainer" parent="." unique_id=1335879713]
 offset_right = 26.0
